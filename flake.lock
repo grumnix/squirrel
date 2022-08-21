@@ -1,0 +1,82 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1661009065,
+        "narHash": "sha256-i+Q2ttGp4uOL3j0wEYP3MXLcu/4L/WbChxGQogiNSZo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "9a91318fffec81ad009b73fd3b640d2541d87909",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "squirrel_src": "squirrel_src",
+        "tinycmmc": "tinycmmc"
+      }
+    },
+    "squirrel_src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644511563,
+        "narHash": "sha256-vzAF0ooYoghw0yKKoS0Q6RnPPMhmP+05RoutVSZIGwk=",
+        "owner": "albertodemichelis",
+        "repo": "squirrel",
+        "rev": "f92bc298784ceea459b12e2de33bdff672bfeb83",
+        "type": "github"
+      },
+      "original": {
+        "owner": "albertodemichelis",
+        "ref": "v3.2",
+        "repo": "squirrel",
+        "type": "github"
+      }
+    },
+    "tinycmmc": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1660915337,
+        "narHash": "sha256-RUvBcVlsF0jleNeDGP2TtTYVozsx+7lJeOlQJ9vuYrk=",
+        "owner": "grumbel",
+        "repo": "tinycmmc",
+        "rev": "25af158259bc772a5393c6200c4ebfd0ec4e28d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "grumbel",
+        "repo": "tinycmmc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
