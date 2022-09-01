@@ -11,7 +11,7 @@
 
   outputs = { self, nixpkgs, tinycmmc, squirrel_src }:
     tinycmmc.lib.eachSystemWithPkgs (pkgs:
-      {
+      rec {
         packages = rec {
           default = squirrel;
 
@@ -24,6 +24,15 @@
             nativeBuildInputs = [
               pkgs.buildPackages.cmake
             ];
+          };
+        };
+
+        apps = rec {
+          default = sq;
+
+          sq = {
+            type = "app";
+            program = "${packages.squirrel}/bin/sq";
           };
         };
       }
